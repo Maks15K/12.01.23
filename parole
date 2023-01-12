@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    // int age, height, grade;
+    // cout<<"Enter your age"<< endl; 
+    // cin >> age;
+    // cout<<"Enter your grade"<< endl; 
+    // cin >> grade;
+    // cout<<"Enter your height"<< endl; 
+    // cin >> height;
+    
+    // if(age > 0 && age < 120){
+    //     cout << "your age is good" << endl;
+    // }else cout << "your age is very strange" << endl;
+    
+    // if(age > 4 && grade < 10){
+    //     cout << "your grade is good" << endl;
+    // }else cout << "your grade is very strange" << endl;
+    
+    // if(age > 40 && height < 220){
+    //     cout << "your height is good" << endl;
+    // }else cout << "your height is very strange" << endl;
+    
+    
+    string pass2, login2;
+    
+    cout << "Enter your login" << endl;
+    cin >> login2;
+    cout << "Enter your pass" << endl;
+    cin >> pass2;
+    
+    string pass = "e1";
+    string login = "maka";
+    
+    if(login == login2){
+        cout<<"processing" << endl;
+    }else cout << "incorrect login" << endl;
+    
+    if(pass == pass2){
+        cout<<"you are loged in" << endl;
+    }else cout << "incorrect password" << endl;
+    
+    return 0;
+}
