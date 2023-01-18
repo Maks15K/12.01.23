@@ -1,0 +1,72 @@
+#include <iostream>
+using namespace std;
+
+
+bool isNumber(string s) {
+	for (int i = 0; i < s.length(); i++) {
+		if (isdigit(s[i]) == false) {
+			return false;
+		}
+	}
+	return true;
+}
+
+int main2() {
+	string myname;
+
+	do {
+		cout << "Ēnter my name" << endl;
+		cin >> myname;
+		if (isNumber(myname)) {
+			cout << "That is number";
+		}
+	} while (myname != "Maks");
+
+	return 0;
+}
+
+int pass() {
+	string pass;
+
+	do {
+		cout << "Ēnter pass" << endl;
+		cin >> pass;
+		if (isNumber(pass)) {
+			cout << "That is numbers";
+		}
+		else {
+			cout << "That is not numbers";
+		}
+	} while (pass != "Maks");
+
+	return 0;
+}
+
+int main() {
+
+	string name = "Maks";
+	string name2;
+	int i = 0;
+
+	while(i<3) {
+		i++;
+		cout << i << endl << "Enter your name - ";
+		cin >> name2;
+		if (name2 == name) {
+			cout << "Your name is correct";
+			break;
+		}
+	}
+
+	do {
+		cout << "Enter my name" << endl;
+		cin >> name;
+		if (name == "no") {
+			cout << "yes!";
+		}
+	} while (name != "Maks");
+
+	main2();
+	pass();
+	return 0;
+}
