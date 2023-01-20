@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i = 0 ; i<100 ; i++ )
+	{
+		cout << i << endl << i * i << endl;
+		if (i >= 0) {
+			if (i<=20) {
+				cout << "corect";
+			}
+		}
+		else {
+			cout << "your number is negative";
+		}
+		if (i > 100 || i < 30) {
+			cout << "incorrect";
+		}
+		if (i <= 20) {
+			cout << "Maks";
+		}
+		else if (i == 21) {
+			cout << "i am done";
+		}
+	}
+
+	for (int i = 10; i > 0; i--) {
+		cout << i;
+	}
+
+	string username, pass, username2, pass2;
+	cout << "enter your name"<<endl;
+	cin >> username;
+	cout << "enter your pass"<<endl;
+	cin >> pass;
+
+	for (int i = 0; i < 2; i++) {
+		cout << "check"<<endl;
+		cout << "enter your name" << endl;
+		cin >> username2;
+		cout << "enter your pass" << endl;
+		cin >> pass2;
+		if (username == username2 && pass == pass2) {
+			cout << "well done" << endl;
+			break;
+		}
+		else {
+			cout << "sorry you are out" << endl;
+		}
+	}
+	string names[5];
+	string name;
+	int i = 0;
+	while (i <= 4) {
+		cout << "enter any name" << endl;
+		cin >> name;
+		names[i] = name;
+		i++;
+	}
+	for (int i = 0; i < 10; i++)
+		cout << names[i] << ", ";
+
+	return 0;
+}
