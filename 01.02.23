@@ -1,0 +1,202 @@
+#include<iostream>
+
+using namespace std;
+
+//int main() {
+//	int a = 1;
+//	do {
+//		int b = 1;
+//		do {
+//			cout << a<<"\n";
+//			b++;
+//		} while (b<=5);
+//		a++;
+//	} while (a<=3);
+//	return 0;
+//}
+
+int main() {
+	int x = 10;
+	switch (x)
+	{
+	case 10:
+		cout << "x is 10"; break;
+	case 20:
+		cout << "x is 20"; break;
+	case 30:
+		cout << "x is 30"; break;
+	default:
+		cout << "x is not 10, 20 or 30"; break;
+	}
+	return 0;
+}
+
+int main() {
+	int x, x1;
+	cout << "ievadiet pirmo skaitli" << endl;
+	cin >> x;
+	cout << "ievadiet otro skaitli" << endl;
+	cin >> x1;
+	if (x1 < x) {
+		cout << "x ir max bet x1 ir min"<< endl;
+	}
+	else if (x1 > x) {
+		cout << "x ir min bet x1 ir max"<<endl;
+	}
+	else {
+		cout << "skaitļi ir vienadi" << endl;
+	}
+	if (x < 0 && x1 < 0) {
+		cout << "skaitļi ir nagativi" << endl;
+	}
+	if (x % 2 == 0 && x1 % 2 == 0) {
+		cout << "skaitļi ir pāru";
+	}
+	return 0;
+}
+
+int main() {
+	int pro = 0;
+	cout << "enter your procent - "<< endl;
+	cin >> pro;
+	if (pro >= 90) {
+		cout << "  Grade A" << endl;
+	}
+	else if (pro >= 80) {
+		cout << "  Grade B" << endl;
+	}
+	else if (pro >= 70) {
+		cout << "  Grade C" << endl;
+	}
+	else if (pro >= 60) {
+		cout << "  Grade D" << endl;
+	}
+	else if (pro >= 40) {
+		cout << "  Grade E" << endl;
+	}
+	else if (pro < 40) {
+		cout << "  Grade F" << endl;
+	}
+	else {
+		cout << "something went wrong";
+	}
+}
+
+int main() {
+	int weeknum, monthnum;
+
+	cout << "Enter number of day 1-7 : " << endl;
+	cin >> weeknum;
+
+	switch (weeknum)
+	{
+	case 1:
+		cout << "Monday" << endl;
+		break;
+	case 2:
+		cout << "Tuesday" << endl;
+		break;
+	case 3:
+		cout << "Wednesday" << endl;
+		break;
+	case 4:
+		cout << "Thirsday" << endl;
+		break;
+	case 5:
+		cout << "Friday" << endl;
+		break;
+	case 6:
+		cout << "Saturday" << endl;
+		break;
+	case 7:
+		cout << "Sunday" << endl;
+		break;
+	default:
+		cout << "your day is not correct" << endl;
+		break;
+	}
+
+	cout << "Enter number of month 1-12 : " << endl;
+	cin >> monthnum;
+
+	switch (monthnum)
+	{
+	case 1:
+		cout << "January" << endl;
+		break;
+	case 2:
+		cout << "February" << endl;
+		break;
+	case 3:
+		cout << "Mart" << endl;
+		break;
+	case 4:
+		cout << "April" << endl;
+		break;
+	case 5:
+		cout << "May" << endl;
+		break;
+	case 6:
+		cout << "June" << endl;
+		break;
+	case 7:
+		cout << "July" << endl;
+		break;
+	case 8:
+		cout << "August" << endl;
+		break;
+	case 9:
+		cout << "September" << endl;
+		break;
+	case 10:
+		cout << "October" << endl;
+		break;
+	case 11:
+		cout << "November" << endl;
+		break;
+	case 12:
+		cout << "December" << endl;
+		break;
+	default:
+		cout << "your month is not correct" << endl;
+		break;
+	}
+
+	return 0;
+}
+
+int main() {
+	int side1, side2, side3;
+
+	cout << "Enter triangle first side :" << endl;
+	cin >> side1;
+	cout << "Enter triangle second side :" << endl;
+	cin >> side2;
+	cout << "Enter triangle third side :" << endl;
+	cin >> side3;
+
+	if (side1 == side2 && side1 == side3) {
+		cout << "triangle is regular" << endl;
+	}
+	else if (side1 == side2 || side1 == side3 || side2 == side3) {
+		cout << "triangle is side_equal" << endl;
+	}
+}
+
+void checkIfOdd(int num) {
+	if (num % 2 == 1) {
+		cout << "number is odd" << endl;
+	}
+	else {
+		cout << "number is not odd" << endl;
+	}
+}
+
+int main() {
+	int num;
+	cout << "input number" << endl;
+	cin >> num;
+	checkIfOdd(num);
+}
+
+
