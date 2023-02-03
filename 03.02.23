@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i = 0;
+	while (i <= 125) {
+		i++;
+		cout << i * 3 << endl;
+		cout << "1/" << i << ", " << endl;
+	}
+	int j = 20;
+	while (j <= 20 && j!=0) {
+		j--;
+		cout << j * j * j << endl;
+	}
+	i = 0;
+	while (i < 20) {
+		i++;
+		for (int y = 0; y < i; y++) {
+			cout << "1";
+		}
+		cout << endl;
+	}
+	int pro = 7;
+	int p = 0;
+	for (int q = 0; q < 7; q++) {
+		cout << "        ";
+		for (int w = 0; w < pro; w++) {
+			cout << " ";
+		}
+		for (int u = 0; u <= q; u++) {
+			cout << "**";
+		}
+		cout << endl;
+		pro--;
+	}
+	pro = 7;
+	for (int q = 0; q < 7; q++) {
+		for (int w = 0; w < pro; w++) {
+			cout << "  ";
+		}
+		for (int u = 0; u <= q; u++) {
+			cout << "****";
+		}
+		cout << endl;
+		pro--;
+	}
+	for (int wood = 0; wood < 3; wood++) {
+		cout << "              ****"<<endl;
+	}
+
+	for (int num = 1000; num > 0;num=num-5) {
+		cout << num << endl;
+	}
+
+	while(time<)
+
+
+
+}
