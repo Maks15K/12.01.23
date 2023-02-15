@@ -53,7 +53,30 @@ int main() {
 		cout << num << endl;
 	}
 
-	while(time<)
+	string s = "";
+	while (s != "stop") {
+		cin >> s;
+		cout << s << endl;
+	}
+
+	string login, pass, log1, pass1;
+	cout << "login - ";
+	cin >> login;
+	cout << endl <<"password - ";
+	cin >> pass;
+	for (int i = 0; i < 5; i++) {
+		cout << endl<< "enter login - ";
+		cin >> log1;
+		cout <<endl<< "enter pass - ";
+		cin >> pass1;
+		if (login == log1 && pass == pass1) {
+			cout << endl << "all is corect";
+			break;
+		}
+		else {
+			cout << endl << "you have " << 4 - i << " tries";
+		}
+	}
 
 
 
