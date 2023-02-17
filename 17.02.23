@@ -1,0 +1,89 @@
+#include <iostream>
+using namespace std;
+#include <vector>
+
+int main() {
+	vector<int> numgroup{1,2,3,1,2};
+	for (int i = 0; i < numgroup.size(); i++) {
+		cout << numgroup[i]<<endl;
+		if (numgroup[i] == 1 || numgroup[i] == 4) {
+			cout << "jaja"<< endl;
+		}
+	}
+	vector<string> country{"usa","uk", "china", "india", "canada", "australia"};
+	vector<string> code{"1+","+44","+86","+91","+1", "+61"};
+	string usernum, phone;
+	cout << "enter your code - ";
+	cin >> usernum;
+	cout << endl;
+	cout << "enter your phone number - ";
+	cin >> phone; 
+	cout << endl;
+	int a = 0;
+	for (int i = 0; i < country.size(); i++) {
+		if (usernum == code[i]) {
+			cout << country[i]<<endl;
+			a++;
+
+		}
+	}
+	if (a==0) {
+		cout << "ej prom"<<endl;
+	}
+	else {
+		cout << usernum << phone;
+	}
+
+	a = 0;
+
+	vector<int> Grade{3,8,7,4};
+	vector<string> name{ "anna","antons","vlads","artemijs"};
+	int grade;
+	cout << "enter your grade - ";
+	cin >> grade;
+	cout << endl;
+	for (int i = 0; i < Grade.size(); i++) {
+		if (grade == Grade[i]) {
+			cout << name[i] << endl;
+			a++;
+		}
+	}
+	if (a==0) {
+		cout << "ej prom" << endl;
+	}
+
+
+	vector<int>Pirm;
+	int step = 0;
+	for (int i = 1; i < 10; i++) {
+		for (int j = 1; j <= i; j++) {
+			if (i%j==0) {
+				step++;
+			}
+		}
+		if (step == 2 || step == 1) {
+			Pirm.push_back(i);
+		}
+		step = 0;
+	}
+	cout << Pirm[0] << Pirm[1] << Pirm[2] << Pirm[3] << Pirm[4]<<endl;
+
+
+
+	vector<int> Date{3836,583463,7346346,4346346};
+	vector<string> Holiday{ "Pasha","Cristmass","My birth","ligo"};
+	string answer;
+	cin >> answer;
+	if (answer == "true") {
+		for (int i = 0; i < Date.size(); i++) {
+			cout << Date[i] << "----------" << Holiday[i] << endl;
+		}
+	}
+	else {
+		cout << "Goodbye";
+	}
+
+
+
+	return 0;
+}
