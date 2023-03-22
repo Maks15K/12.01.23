@@ -1,0 +1,93 @@
+#include <iostream>
+#include <vector> 
+using namespace std;
+
+int main() {
+	vector<int> arr{ 1,2,3,4,5,6,7,8,9,0 };
+	for (int i = 0; i < size(arr); i++) {
+		if (arr[i] == 3) {
+			cout << "you are gay 3"<<endl;
+		}
+		else if (arr[i] == 5) {
+			cout << "you are gay 5"<<endl;
+			}
+		else if (arr[i]==7) {
+			arr[i] = 5;
+		}
+	}
+	arr.pop_back();
+	arr.push_back(3);
+
+	for (int i = 0; i < size(arr); i++) {
+		cout << arr[i];
+	}
+
+
+	vector<string> arr2{"galds", "kresls", "lampa", "dators", "durvis"};
+	for (int i = 0; i < size(arr2); i++) {
+		if (arr2[i] == "dators") {
+			cout << " dators" << endl;
+		}
+		else if (arr2[i] == "skapis") {
+			cout << " skapis" << endl;
+		}
+		else if (arr2[i] == "dators") {
+			arr2[i] = "laptop";
+		}
+	}
+	arr2.pop_back();
+	arr2.push_back("logs");
+
+	for (int i = 0; i < size(arr2); i++) {
+		cout << arr2[i]<<endl;
+	}
+	vector<string> countries{ "USA", "UK", "China", "India", "Canada", "Australia" };
+	vector<string> codes{ "+1", "+44", "+86", "+91", "+1", "+61" };
+	string input;
+	int a = 0;
+	cin >> input;
+	for (int i = 0; i < countries.size(); i++) {
+		if (countries[i] == input) {
+			cout << codes[i] << endl;
+			a++;
+		}
+	}
+	if (a == 0) {
+		cout << "There is no such country" << endl;
+	}
+	string input_code;
+	int b = 0;
+	cin >> input_code;
+	for (int j = 0; j < countries.size(); j++) {
+		if (codes[j] == input_code) {
+			cout << countries[j] << endl;
+			b++;
+		}
+	}
+	if (b == 0) {
+		cout << "There is no such code" << endl;
+	}
+	for (int n = 0; n < countries.size(); n++) {
+		cout << countries[n] << " ";
+	}
+	cout << endl;
+	for (int y = 0; y < codes.size(); y++) {
+		cout << codes[y] << " ";
+	}
+	cout << endl;
+	countries.at(1) = "Igaunija";
+	codes.at(1) = "+372";
+	countries.pop_back();
+	codes.pop_back();
+	countries.push_back("Latvija");
+	codes.push_back("+371");
+	for (int n = 0; n < countries.size(); n++) {
+		cout << countries[n] << " ";
+	}
+	cout << endl;
+	for (int y = 0; y < codes.size(); y++) {
+		cout << codes[y] << " ";
+	}
+
+	return 0;
+}
